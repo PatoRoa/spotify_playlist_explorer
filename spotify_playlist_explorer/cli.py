@@ -46,9 +46,3 @@ def main():
         print(f"- Outputs folder: {output_folder.resolve()}")
     except Exception as e:
         print(f"Something went wrong: {e}")
-
-
-"""
-For debugging:
-Command line command: python -m spotify_playlist_explorer [folder path]
-"""

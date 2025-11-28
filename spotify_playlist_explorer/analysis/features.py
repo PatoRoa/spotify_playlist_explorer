@@ -17,8 +17,6 @@ def add_features(df: pd.DataFrame) -> pd.DataFrame:
     # TODO: fix 'year' being a float
 
     # TODO: add features
-    # Artist names
-    # Artist origins
     # Primary genre
 
     return df
