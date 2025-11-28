@@ -2,14 +2,14 @@
 from pathlib import Path
 import argparse
 
-from .pipeline import run_pipeline
+from spotify_playlist_explorer.pipeline import run_pipeline
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Analyze a folder of playlist CSVs and produce a master CSV and charts."
     )
-    parser.aadd_argument(
+    parser.add_argument(
         "input_folder",
         nargs="?",
         help="Path to folder containing CSV files."

@@ -1,14 +1,11 @@
 # spotify_playlist_explorer/pipeline.py
 from pathlib import Path
 
-from pathlib import Path
-
-from config import Config
-from analysis.io_utils import load_folder_csvs, save_master_csv
-from analysis.cleaning import clean_dataframe
-from analysis.features import add_features
-from analysis.stats import make_summaries
-from analysis.plots import plot_all
+from .analysis.io_utils import load_folder_csvs, save_master_csv
+from .analysis.cleaning import clean_dataframe
+from .analysis.features import add_features
+from .analysis.stats import make_summaries
+from .analysis.plots import plot_all
 
 
 def run_pipeline(input_folder: Path, output_folder: Path) -> Path:
