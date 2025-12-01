@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['spotify_playlist_explorer\\__main__.py'],
+    ['run_spotify_playlist_explorer.py'],
     pathex=[],
     binaries=[],
     datas=[],

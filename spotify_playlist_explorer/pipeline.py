@@ -1,8 +1,7 @@
 # spotify_playlist_explorer/pipeline.py
 from pathlib import Path
-
 from .analysis.io_utils import load_folder_csvs, save_master_csv
-from .analysis.cleaning import clean_dataframe
+from .analysis.cleaning import clean_dataframe, keep_albums
 from .analysis.features import add_features
 from .analysis.stats import make_summaries
 from .analysis.plots import plot_all
@@ -35,3 +34,13 @@ def run_pipeline(input_folder: Path, output_folder: Path) -> Path:
 
     master_csv_path = save_master_csv(df, output_folder, name='master.csv')
     return master_csv_path
+
+
+# def album_pipeline(input_folder: Path, output_folder: Path) -> Path:
+#     output_folder.mkdir(parents=True, exist_ok=True)
+#
+#     df = load_folder_csvs(input_folder)
+#     df = keep_albums(df)
+#
+#     album_csv_path = save_master_csv(df, output_folder, name='albums.csv')
+#     return album_csv_path

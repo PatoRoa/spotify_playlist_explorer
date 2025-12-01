@@ -4107,10 +4107,7 @@
    'E:\\Documents\\Code '
    'Projects\\spotify_playlist_explorer\\spotify_playlist_explorer\\__init__.py',
    'PYMODULE'),
-  ('spotify_playlist_explorer.analysis',
-   'E:\\Documents\\Code '
-   'Projects\\spotify_playlist_explorer\\spotify_playlist_explorer\\analysis\\__init__.py',
-   'PYMODULE'),
+  ('spotify_playlist_explorer.analysis', '-', 'PYMODULE'),
   ('spotify_playlist_explorer.analysis.cleaning',
    'E:\\Documents\\Code '
    'Projects\\spotify_playlist_explorer\\spotify_playlist_explorer\\analysis\\cleaning.py',

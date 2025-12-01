@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse
 
-from spotify_playlist_explorer.pipeline import run_pipeline
+from spotify_playlist_explorer.pipeline import run_pipeline #, album_pipeline
 
 
 def parse_args() -> argparse.Namespace:
@@ -26,7 +26,7 @@ def parse_args() -> argparse.Namespace:
 def main():
     args = parse_args()
 
-    # If user doesn't provide folder as an argumet, ask interactively
+    # If user doesn't provide folder as an argument, ask interactively
     if args.input_folder is None:
         input_folder_str = input("Enter the path to the folder with CSVs: ").strip()
     else:
@@ -46,3 +46,12 @@ def main():
         print(f"- Outputs folder: {output_folder.resolve()}")
     except Exception as e:
         print(f"Something went wrong: {e}")
+
+
+    # try:
+    #     album_csv_path = album_pipeline(input_folder, output_folder)
+    #     print("\nAlbum list complete.")
+    #     print(f"- Albums CSV: {album_csv_path}")
+    #     print(f"- Outputs folder: {output_folder.resolve()}")
+    # except Exception as e:
+    #     print(f"Something went wrong with the albums: {e}")
