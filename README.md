@@ -2,7 +2,7 @@
 A desktop program for exploring CSV playlist data: merging, cleaning, and creating charts.
 
 ## Overview
-Spotify Playlist Explorer is a Python application that processes a folder of CSV files that contain Spotify song metadata (e.g., playlists exported with song names, artists, genres, albums, etc.) from Chosic.
+Spotify Playlist Explorer is a Python application that processes a folder of CSV files that contain Spotify song metadata (e.g., playlists exported with song names, artists, genres, albums, etc.) from Chosic (https://www.chosic.com/spotify-playlist-exporter/).
 
 The application:
 - Loads all CSVs in a folder
@@ -56,9 +56,10 @@ spotify_playlist_explorer/
 -   `pandas`, `matplotlib`
 
 ### Usage
-1. Create a folder with your CSV playlist files from Chosic
+1. Create a folder with your CSV playlist files from Chosic (https://www.chosic.com/spotify-playlist-exporter/)
 2. Download `SpotifyPlaylistExplorer_v1.zip` and extract it
 3. Double-click the `.exe`
 4. When prompted, paste your CSV folder path
 5. When complete, the application will create an `outputs/` folder that contains the master CSV and charts
+
 
