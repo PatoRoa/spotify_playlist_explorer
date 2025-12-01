@@ -56,8 +56,9 @@ spotify_playlist_explorer/
 -   `pandas`, `matplotlib`
 
 ### Usage
-1. Create a folder with your CSV playlist files
+1. Create a folder with your CSV playlist files from Chosic
 2. Download `SpotifyPlaylistExplorer_v1.zip` and extract it
 3. Double-click the `.exe`
 4. When prompted, paste your CSV folder path
 5. When complete, the application will create an `outputs/` folder that contains the master CSV and charts
+
